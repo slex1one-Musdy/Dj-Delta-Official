@@ -1,1 +1,361 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+/*Header Part*/
+header {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("kalabalik2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  header .navigation {
+    display: flex;
+    position: sticky;
+    border: none; }
+    header .navigation .hamburger {
+      display: none; }
+    header .navigation .navigation-elements {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      margin-left: auto;
+      align-self: center; }
+      header .navigation .navigation-elements a {
+        color: white;
+        margin-right: 10px; }
+    header .navigation .logo {
+      padding: 10px 0; }
+      header .navigation .logo h3 {
+        font-family: 'Dancing Script', cursive;
+        color: white; }
+  header #jumbotron-part .jumbotron-content-box {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0; }
+    header #jumbotron-part .jumbotron-content-box .jumbotron-content h1 {
+      color: white;
+      font-size: 5rem;
+      padding-bottom: 15px; }
+    header #jumbotron-part .jumbotron-content-box .jumbotron-content p {
+      color: white;
+      text-align: justify;
+      line-height: 30px; }
+    header #jumbotron-part .jumbotron-content-box .jumbotron-content .event-date-descrpt {
+      font-size: 1.7rem; }
+    header #jumbotron-part .jumbotron-content-box .jumbotron-content .jumbotron-button {
+      padding: 30px 0; }
+    header #jumbotron-part .jumbotron-content-box .jumbotron-image {
+      width: 80rem;
+      height: 80rem; }
+      header #jumbotron-part .jumbotron-content-box .jumbotron-image img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top; }
+
+/*Biography Part - About*/
+#about {
+  background-color: #000000;
+  padding: 100px 0; }
+  #about .caption-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    margin: 0 auto 50px auto;
+    font-family: 'Dancing Script', cursive; }
+    #about .caption-header h3 {
+      font-size: 3rem; }
+  #about .row {
+    margin: 130px 0; }
+    #about .row .col-md-6 {
+      display: flex;
+      justify-content: center; }
+      #about .row .col-md-6 .about-content {
+        align-self: center;
+        order: 1; }
+        #about .row .col-md-6 .about-content .animation-element {
+          padding: 20px;
+          text-align: center;
+          font-size: 3.5rem; }
+        #about .row .col-md-6 .about-content p {
+          color: white;
+          text-align: justify;
+          line-height: 1.8rem; }
+      #about .row .col-md-6 .photo-container {
+        max-width: 500px;
+        max-height: 500px;
+        order: 2; }
+        #about .row .col-md-6 .photo-container img {
+          width: 100%;
+          transition: all .9s ease-in-out;
+          /*Animations*/
+          object-fit: cover;
+          object-position: top;
+          position: relative;
+          /*opacity: .5;*/ }
+          #about .row .col-md-6 .photo-container img:hover {
+            filter: blur(15px); }
+        #about .row .col-md-6 .photo-container .box-shape {
+          position: absolute;
+          top: -100px;
+          right: -150px;
+          width: 350px;
+          height: 500px;
+          background-color: #1F0B2D; }
+        #about .row .col-md-6 .photo-container .box-shape-2 {
+          position: absolute;
+          top: -100px;
+          left: -150px;
+          width: 350px;
+          height: 500px;
+          background-color: #1F0B2D;
+          clip-path: polygon(100% 0%, 0% 100%, 100% 100%); }
+    #about .row .social-accounts {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px auto;
+      width: 50%; }
+      #about .row .social-accounts i {
+        color: white;
+        font-size: 3rem;
+        transition: all .9s ease-in-out; }
+        #about .row .social-accounts i:hover {
+          color: #9014af; }
+
+/*Media PART - Videos*/
+#media {
+  padding: 100px 0;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(0deg, black 0%, #1c052b 53%);
+  background-image: url("back.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  #media .caption-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    /*font-family: 'Dancing Script', cursive;*/
+    margin: 0 auto 50px auto; }
+  #media .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; }
+
+/*Events Part*/
+#events {
+  background-color: black;
+  height: 100vh;
+  display: block; }
+  #events .events-header-photo {
+    background-image: url("mor.jpg");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(0%) contrast(150%) blur(4px); }
+  #events .eventdates {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px; }
+  #events .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 80px; }
+  #events .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+    list-style-type: square; }
+    #events .dates li {
+      color: white;
+      font-size: 1.3rem;
+      padding: 0 10px; }
+      #events .dates li .city {
+        font-weight: 700; }
+      #events .dates li .location {
+        font-weight: 300;
+        font-size: 1rem; }
+      #events .dates li .date {
+        font-weight: 300;
+        color: #9014af; }
+
+/*Contact Part*/
+#contact {
+  background-color: black;
+  height: 100vh; }
+  #contact .form-container {
+    max-width: 1200px; }
+    #contact .form-container .header-container h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center;
+      padding: 10px 0; }
+    #contact .form-container .header-container .contact-me {
+      color: white;
+      font-size: 1rem;
+      text-align: center;
+      padding: 10px 0; }
+    #contact .form-container form {
+      text-align: center;
+      margin: 0 auto; }
+      #contact .form-container form .group-form {
+        padding: 30px; }
+        #contact .form-container form .group-form input[type="text"] {
+          border: none;
+          border-bottom: 1px solid #9014af;
+          background-color: black;
+          color: white;
+          padding: 20px 45px;
+          text-align: center; }
+          #contact .form-container form .group-form input[type="text"]:focus {
+            outline: none; }
+        #contact .form-container form .group-form input::placeholder {
+          color: white; }
+        #contact .form-container form .group-form textarea {
+          width: 50%;
+          height: 150px;
+          padding: 10px;
+          border: none; }
+          #contact .form-container form .group-form textarea:focus {
+            outline: none; }
+        #contact .form-container form .group-form textarea::placeholder {
+          color: #333; }
+      #contact .form-container form .form-groups-buttons {
+        padding: 10px 0; }
+        #contact .form-container form .form-groups-buttons button {
+          border: 1px solid #9014af;
+          padding: 10px 15px;
+          border-radius: 0;
+          background-color: black;
+          color: white;
+          transition: background-color .9s ease-in-out;
+          cursor: pointer; }
+
+/*Footer Part*/
+footer {
+  background-color: #07010C;
+  position: relative;
+  z-index: 4;
+  padding: 25px;
+  text-align: center;
+  color: white; }
+  footer img {
+    max-width: 100px; }
+  footer a {
+    color: purple;
+    text-decoration: none;
+    transition: all .9s ease-in-out; }
+    footer a:hover {
+      text-decoration: none;
+      padding-left: 10px;
+      color: white; }
+
+/*Media Query*/
+@media screen and (max-width: 500px) {
+  /*Header Part*/
+  header .navigation {
+    display: flex;
+    position: sticky;
+    border: none; }
+    header .navigation .navigation-elements .menu {
+      display: none; }
+    header .navigation .navigation-elements .hamburger {
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      width: 50%; }
+    header .navigation .navigation-elements {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin-left: auto;
+      align-self: center; }
+      header .navigation .navigation-elements a {
+        color: white; }
+    header .navigation .logo {
+      padding: 10px 0; }
+      header .navigation .logo h3 {
+        font-family: 'Dancing Script', cursive;
+        color: white; }
+  header .jumbotron-content-box {
+    margin: 10px auto; }
+    header .jumbotron-content-box .jumbotron-content {
+      font-size: .3rem; }
+
+  /*About Section*/
+  #about {
+    /*&:nth-child(4){
+        margin-top: 100px 0;
+    }*/ }
+    #about .row {
+      margin: 90px 0; }
+      #about .row .photo-container img {
+        /*Animations*/
+        object-fit: cover;
+        object-position: top;
+        position: relative;
+        /*opacity: .5;*/ }
+      #about .row .photo-container .box-shape {
+        display: none; }
+      #about .row .photo-container .box-shape-2 {
+        display: none; }
+      #about .row .social-accounts {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto;
+        width: 100%; }
+        #about .row .social-accounts i {
+          color: white;
+          font-size: 3rem; }
+    #about .caption-header h3 i {
+      display: none; }
+
+  /*Videos Part*/
+  #media .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #media .videos .video {
+      margin: 15px 0; }
+
+  #contact {
+    padding-top: 50px;
+    height: auto; }
+    #contact textarea {
+      width: 100%; }
+
+  #events {
+    height: auto; } }
+
+/*# sourceMappingURL=gultekin.css.map */
